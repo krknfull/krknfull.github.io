@@ -1,130 +1,151 @@
 {
     "tracks": [
         {
-            "title": "Кракен Ростов",
-            "artist": "KRKNFULL",
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/rostov.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Кракен СПБ",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/spb.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "2KN.ST",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "2KN.ST 2",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st-2.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "2KN.ST 3",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st-3.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
             "title": "Я иду на точку",
-            "artist": "KRKNFULL", 
+            "artist": "KRKNFULL",
             "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/point.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Не только через тор",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/not-only-through-tor.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Там и тут",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/here-and-there.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Арбат",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/arbat.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Выпускаете кракена 1",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/vypyskaite-kraken-1.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Выпускайте кракена 2",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/vypyskaite-kraken-2.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Воронеж",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/voronezh.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Чебоксары || Новогодняя песня",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/newyear25.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "GUMMO",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/gummo.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Хардстайл",
-            "artist": "KRKNFULL", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/hardstyle.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Нужен Кракен",
-            "artist": "KRKNFULL x Паша Техник", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/pasha-technique.mp3",
-            "cover": "kraken-logo.svg"
-        },
-        {
-            "title": "Медуза",
-            "artist": "KRKNFULL x MATRANG", 
-            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/meduza.mp3",
-            "cover": "kraken-logo.svg"
+            "cover": "kraken-logo.svg",
+            "isNew": false
         },
         {
             "title": "BUSHIDO ZHO",
-            "artist": "KRKNFULL", 
+            "artist": "KRKNFULL",
             "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/bushido-zho.mp3",
-            "cover": "kraken-logo.svg"
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Медуза",
+            "artist": "KRKNFULL x MATRANG",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/meduza.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
         },
         {
             "title": "Только через тор",
-            "artist": "KRKNFULL", 
+            "artist": "KRKNFULL",
             "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/only-through-tor.mp3",
-            "cover": "kraken-logo.svg"
+            "cover": "kraken-logo.svg",
+            "isNew": false
         },
         {
             "title": "Только через тор 2",
-            "artist": "KRKNFULL", 
+            "artist": "KRKNFULL",
             "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/only-through-tor-2.mp3",
-            "cover": "kraken-logo.svg"
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Чебоксары || Новогодняя песня",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/newyear25.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Выпускайте кракена",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/vypyskaite-kraken-1.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Выпускайте кракена 2",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/vypyskaite-kraken-2.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "GUMMO",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/gummo.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Хардстайл",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/hardstyle.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Нужен Кракен",
+            "artist": "KRKNFULL x Паша Техник",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/pasha-technique.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "2KN.ST",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "2KN.ST 2",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st-2.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "2KN.ST 3",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st-3.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Кракен Ростов",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/rostov.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
         },
         {
             "title": "Первое правило",
-            "artist": "KRKNFULL", 
+            "artist": "KRKNFULL",
             "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/1st-rule.mp3",
-            "cover": "kraken-logo.svg"
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Не только через тор",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/not-only-through-tor.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Там и тут",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/here-and-there.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Кракен СПБ",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/spb.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Арбат",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/arbat.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
+        },
+        {
+            "title": "Воронеж",
+            "artist": "KRKNFULL",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/voronezh.mp3",
+            "cover": "kraken-logo.svg",
+            "isNew": false
         }
     ]
 }
