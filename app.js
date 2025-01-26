@@ -3,6 +3,8 @@ class MusicPlayer {
         this.tracks = [];
         this.currentTrackIndex = 0;
         this.audio = new Audio();
+        this.isInitialized = false;
+        this.isPlaying = false;
         
         this.initElements();
         this.loadTracksFromJSON()
@@ -10,10 +12,10 @@ class MusicPlayer {
                 this.setupEventListeners();
                 this.restorePlaybackState();
                 this.loadTrack(0);
+                this.isInitialized = true;
             })
             .catch(error => {
                 console.error('Error initializing player:', error);
-                this.showErrorMessage('Не удалось загрузить треки');
             });
     }
     
@@ -24,23 +26,14 @@ class MusicPlayer {
             this.tracks = data.tracks.filter(track => track.url);
             
             if (this.tracks.length === 0) {
-                throw new Error('No valid tracks found');
+                console.error('No valid tracks found');
+                return;
             }
             
             this.renderPlaylist();
         } catch (error) {
             console.error('Error loading tracks:', error);
-            this.showErrorMessage('Ошибка загрузки плейлиста');
         }
-    }
-    
-    showErrorMessage(message) {
-        const errorEl = document.createElement('div');
-        errorEl.textContent = message;
-        errorEl.style.color = 'red';
-        errorEl.style.textAlign = 'center';
-        errorEl.style.padding = '20px';
-        document.querySelector('.container').insertBefore(errorEl, document.querySelector('main'));
     }
     
     initElements() {
@@ -71,15 +64,31 @@ class MusicPlayer {
         this.audio.addEventListener('loadedmetadata', () => this.updateTotalTime());
         this.audio.addEventListener('error', (e) => this.handleAudioError(e));
         
-        this.progressBar.addEventListener('input', (e) => this.setProgress(e.target.value));
+        this.progressBar.addEventListener('input', (e) => this.safeSetProgress(e.target.value));
         
         // Add event listener for saving playback state
         this.audio.addEventListener('timeupdate', () => this.savePlaybackState());
+
+        // Add ended event to automatically play next track
+        this.audio.addEventListener('ended', () => this.nextTrack());
+    }
+    
+    safeSetProgress(value) {
+        try {
+            if (this.audio.duration && !isNaN(this.audio.duration) && isFinite(this.audio.duration)) {
+                const time = (value / 100) * this.audio.duration;
+                
+                if (isFinite(time)) {
+                    this.audio.currentTime = time;
+                }
+            }
+        } catch (error) {
+            console.error('Error setting progress:', error);
+        }
     }
     
     handleAudioError(e) {
         console.error('Audio error:', e);
-        this.showErrorMessage('Не удалось воспроизвести аудио');
         
         // Try next track
         this.nextTrack();
@@ -94,6 +103,8 @@ class MusicPlayer {
         const track = this.tracks[index];
         
         try {
+            // Reset audio state
+            this.audio.pause();
             this.audio.src = track.url;
             this.audio.load();
             
@@ -105,32 +116,51 @@ class MusicPlayer {
             this.progressBar.value = 0;
             this.currentTimeEl.textContent = '0:00';
             this.totalTimeEl.textContent = '0:00';
+
+            // Reset play/pause icons
+            this.playIcon.style.display = 'block';
+            this.pauseIcon.style.display = 'none';
+            this.pauseIcon2.style.display = 'none';
         } catch (error) {
             console.error('Error loading track:', error);
-            this.showErrorMessage('Ошибка загрузки трека');
         }
     }
     
     togglePlay() {
-        this.audio.play()
-            .then(() => {
-                this.playIcon.style.display = 'none';
-                this.pauseIcon.style.display = 'block';
-                this.pauseIcon2.style.display = 'block';
-            })
-            .catch(error => {
-                console.error('Play error:', error);
-                this.showErrorMessage('Не удалось воспроизвести трек');
-            });
+        if (!this.isInitialized || this.tracks.length === 0) return;
+
+        if (this.audio.paused) {
+            this.audio.play()
+                .then(() => {
+                    this.isPlaying = true;
+                    this.playIcon.style.display = 'none';
+                    this.pauseIcon.style.display = 'block';
+                    this.pauseIcon2.style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Play error:', error);
+                    this.isPlaying = false;
+                });
+        } else {
+            this.audio.pause();
+            this.isPlaying = false;
+            this.playIcon.style.display = 'block';
+            this.pauseIcon.style.display = 'none';
+            this.pauseIcon2.style.display = 'none';
+        }
     }
     
     nextTrack() {
+        if (!this.isInitialized || this.tracks.length === 0 || !this.isPlaying) return;
+
         this.currentTrackIndex = (this.currentTrackIndex + 1) % this.tracks.length;
         this.loadTrack(this.currentTrackIndex);
         this.togglePlay();
     }
     
     previousTrack() {
+        if (!this.isInitialized || this.tracks.length === 0 || !this.isPlaying) return;
+
         this.currentTrackIndex = (this.currentTrackIndex - 1 + this.tracks.length) % this.tracks.length;
         this.loadTrack(this.currentTrackIndex);
         this.togglePlay();
@@ -152,22 +182,6 @@ class MusicPlayer {
             const totalMinutes = Math.floor(this.audio.duration / 60);
             const totalSeconds = Math.floor(this.audio.duration % 60);
             this.totalTimeEl.textContent = `${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
-        }
-    }
-    
-    setProgress(value) {
-        try {
-            if (this.audio.duration && !isNaN(this.audio.duration)) {
-                const time = (value / 100) * this.audio.duration;
-                
-                if (isFinite(time)) {
-                    this.audio.currentTime = time;
-                } else {
-                    console.warn('Non-finite currentTime');
-                }
-            }
-        } catch (error) {
-            console.error('Error setting progress:', error);
         }
     }
     
@@ -197,6 +211,8 @@ class MusicPlayer {
     }
     
     playSpecificTrack(index) {
+        if (!this.isInitialized || this.tracks.length === 0) return;
+
         this.currentTrackIndex = index;
         this.loadTrack(index);
         this.togglePlay();
