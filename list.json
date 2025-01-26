@@ -107,6 +107,24 @@
             "artist": "KRKNFULL", 
             "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/bushido-zho.mp3",
             "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Только через тор",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/only-through-tor.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Только через тор 2",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/only-through-tor-2.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Первое правило",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/1st-rule.mp3",
+            "cover": "kraken-logo.svg"
         }
     ]
 }
