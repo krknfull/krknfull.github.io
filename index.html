@@ -1,0 +1,73 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kraken Music Radio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <img src="kraken-logo.svg" alt="Kraken Logo" class="header-logo">
+                Kraken Music Radio
+            </h1>
+        </header>
+        
+        <main>
+            <div class="player">
+                <div class="track-info">
+                    <img id="albumCover" src="kraken-logo.svg" alt="Обложка альбома">
+                    <div class="track-details">
+                        <h2 id="trackTitle">Загрузка...</h2>
+                        <p id="trackArtist">Загрузка...</p>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button id="prevTrack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 19V5l-7 7"/>
+                            <path d="M21 19V5l-7 7"/>
+                        </svg>
+                    </button>
+                    <button id="playPause">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                            <path id="playIcon" d="M5 3l14 9-14 9z"/>
+                            <rect id="pauseIcon" x="5" y="3" width="5" height="18"/>
+                            <rect id="pauseIcon2" x="14" y="3" width="5" height="18"/>
+                        </svg>
+                    </button>
+                    <button id="nextTrack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 19V5l7 7"/>
+                            <path d="M3 19V5l7 7"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="progress">
+                    <input type="range" id="progressBar" min="0" max="100" value="0">
+                    <div class="time-info">
+                        <span id="currentTime">0:00</span>
+                        <span id="totalTime">0:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-download">
+                <h3>Плейлист и загрузки</h3>
+                <div id="playlistContent">
+                    <!-- Треки будут загружаться динамически -->
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&#169; 2024 Kraken Music Radio</p>
+        </footer>
+    </div>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

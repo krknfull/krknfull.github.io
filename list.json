@@ -1,0 +1,16 @@
+{
+    "tracks": [
+        {
+            "title": "Кракен Ростов",
+            "artist": "KRKNFULL",
+            "url": "https://krknfull.github.io/musics/rostov.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Кракен СПБ",
+            "artist": "KRKNFULL", 
+            "url": "https://krknfull.github.com/musics/spb.mp3",
+            "cover": "kraken-logo.svg"
+        }
+    ]
+}
