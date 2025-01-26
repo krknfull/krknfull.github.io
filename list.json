@@ -3,13 +3,73 @@
         {
             "title": "Кракен Ростов",
             "artist": "KRKNFULL",
-            "url": "https://krknfull.github.io/musics/rostov.mp3",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/rostov.mp3",
             "cover": "kraken-logo.svg"
         },
         {
             "title": "Кракен СПБ",
             "artist": "KRKNFULL", 
-            "url": "https://krknfull.github.com/musics/spb.mp3",
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/spb.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "2KN.ST",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "2KN.ST 2",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st-2.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "2KN.ST 3",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/2kn-st-3.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Я иду на точку",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/point.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Не только через тор",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/not-only-through-tor.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Там и тут",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/here-and-there.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Арбат",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/arbat.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Выпускаете кракена 1",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/vypyskaite-kraken-1.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Выпускайте кракена 2",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/vypyskaite-kraken-2.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Воронеж",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/voronezh.mp3",
             "cover": "kraken-logo.svg"
         }
     ]

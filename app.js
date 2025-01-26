@@ -191,20 +191,25 @@ class MusicPlayer {
             <div class="playlist-item">
                 <div class="playlist-item-content">
                     <div class="playlist-item-info">
-                        ${track.title || 'Неизвестный трек'} - ${track.artist || 'Неизвестный исполнитель'}
+                        ${track.isNew ? '<span class="new-badge">New</span>' : ''}
+                        <div class="playlist-item-track-name">
+                            ${track.title || 'Неизвестный трек'} - ${track.artist || 'Неизвестный исполнитель'}
+                        </div>
                     </div>
-                    <button onclick="player.playSpecificTrack(${index})">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M8 5v14l11-7z"/>
-                        </svg>
-                    </button>
-                    <a href="${track.url}" download class="download-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                            <polyline points="7 10 12 15 17 10"/>
-                            <line x1="12" y1="15" x2="12" y2="3"/>
-                        </svg>
-                    </a>
+                    <div class="playlist-item-actions">
+                        <button onclick="player.playSpecificTrack(${index})">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <a href="${track.url}" download class="download-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         `).join('');
