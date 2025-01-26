@@ -71,6 +71,42 @@
             "artist": "KRKNFULL", 
             "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/voronezh.mp3",
             "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Чебоксары || Новогодняя песня",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/newyear25.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "GUMMO",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/gummo.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Хардстайл",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/hardstyle.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Нужен Кракен",
+            "artist": "KRKNFULL x Паша Техник", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/pasha-technique.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "Медуза",
+            "artist": "KRKNFULL x MATRANG", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/meduza.mp3",
+            "cover": "kraken-logo.svg"
+        },
+        {
+            "title": "BUSHIDO ZHO",
+            "artist": "KRKNFULL", 
+            "url": "https://github.com/krknfull/krknfull.github.io/raw/refs/heads/main/musics/bushido-zho.mp3",
+            "cover": "kraken-logo.svg"
         }
     ]
 }
